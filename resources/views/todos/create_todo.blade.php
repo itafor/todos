@@ -29,7 +29,7 @@ Create Todo
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Date</label>
-                        <input type="text" name="todo_date" id="todoId" class="form-control datepicker" placeholder="Enter date" data-provide="datepicker"  required>
+                        <input type="text" name="todo_date" id="todoId" class="form-control datetimepicker" placeholder="Enter date" data-provide="datepicker" data-date-format="dd/mm/yyyy"  required>
                           @error('todo_date')
                     <small style="color: red; font-size: 14px;"> {{ $message }}</small>
                     @enderror

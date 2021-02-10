@@ -21,11 +21,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
 
-        <link href="{{ asset('argon') }}/img/brand/icon.png" rel="icon" type="image/png">
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <!-- Icons -->
-        <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
         <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
         <!-- Argon CSS -->
         <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
@@ -107,26 +103,20 @@
         </main>
     </div>
 
-
-       
  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+ <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
+        <!-- <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+    
+        
+       
+
 
 
  <script src="{{ asset('argon') }}/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-        @stack('js')
+ <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
+       
 
-<script src="https://cdn.jsdelivr.net/npm/@fengyuanchen/datepicker@0.6.5/dist/datepicker.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/@fengyuanchen/datepicker@0.6.5/dist/datepicker.min.css" rel="stylesheet"> 
-<script type="text/javascript">
 
-$(function() {
-  $('.datepicker').datepicker({
-   format: 'mm/dd/yyyy',
-  });
-});
-// $(document).off('.datepicker.data-api');
-</script>
-   <!--  <script src="{{url('js/mainjs.js')}}"></script> -->
-  
 </body>
 </html>

@@ -29,7 +29,7 @@ Manage Todo
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Date</label>
-                        <input type="text" name="todo_date" id="todoId" class="form-control datepicker" placeholder="Enter date"   data-provide="datepicker" value="{{\Carbon\Carbon::parse($todo->todo_date)->format('d/m/Y')}}"  required>
+                        <input type="text" name="todo_date" id="todoId" class="form-control datepicker" placeholder="Enter date"  data-provide="datepicker" data-date-format="dd/mm/yyyy"  value="{{\Carbon\Carbon::parse($todo->todo_date)->format('d/m/Y')}}"  required>
                           @error('todo_date')
                     <small style="color: red; font-size: 14px;"> {{ $message }}</small>
                     @enderror
